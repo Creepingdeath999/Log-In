@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <title>MMSHOP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://use.fontawesome.com/8b5c66dada.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body onload="mainH()" id="body">
+     <div class="background-img"></div>
+    <!--navigation starts here-->
+    <i class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
+    <button id="login-button-mobile" onclick="formopen()">LOG IN</button>
+     <div id="nav">
+       <i class="fa fa-times" onclick="hide()"></i>
+        <nav>
+          <button id="login-button" onclick="formopen()">LOG IN</button>
+         <ul>
+           <li><a class="active" href="index.html">home</a></li>
+           <li><a href="#">products</a></li>
+           <li><a href="#">about</a></li>
+           <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--navigation ends here-->
+
+
+    <!--FORM starts here-->
+      <form id="form">
+       <span onclick="formhide()">X</span>
+       <h1 class="form-h1">MMShop</h1>
+       <input type="text" name="email" placeholder="Email Or Phone">
+       <input type="password" name="psw" placeholder="Password">
+       <h1 class="btn">Log In</h1>
+       <div class="login-options">
+       <input id="rememberme" name="rememberme" value="remember" type="checkbox"><p id="rememberme-label">Remember Me</p>
+       <p id="forgot"><a style="font-style: normal;" href="#">Forgot Password?</a></p>
+       <p>Dont Have An Account Yet? <a href="#">Sing Up Here</a></p>
+       </div>
+        </form>
+        <!--FORM ends here-->
+
+
+        <!--Main page starts here-->
+           <div id="h1">
+           <h1  class="main-h1" id="main-h1-left">Lorem Ipsum</h1>
+           <h1 class="main-h1" id="main-h1-right">incididunt ut labore et dolore</h1>
+         </div>
+
+    <script>
+      function show()
+      {
+        var x=document.getElementById('nav');
+        x.style.left="0px";
+        
+  }
+  function hide()
+  {  
+     
+     var x=document.getElementById('nav');
+      x.style.left="-310px";  
+      
+}
+function formopen(){
+  var h1=document.getElementById('h1');
+  var x=document.getElementById('form');
+  if(x.style.top=="350px"){
+    h1.style.opacity="1";
+    x.style.top="-320px";
+  }else{
+    x.style.top="350px";
+        h1.style.opacity="0.1";
+  }
+  
+
+ 
+}
+function formhide()
+{  
+   var h1=document.getElementById('h1'); 
+    var x=document.getElementById('form');
+    x.style.top="-320px";
+     h1.style.opacity="1";
+  
+
+}
+function mainH(){
+  var x=document.getElementById('main-h1-right');
+   var y=document.getElementById('main-h1-left');
+    x.style.left="50%";
+     y.style.left="50%";
+}
+
+    </script>
+   </body>
+  </html>

@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bungee&display=swap');
+*{
+	padding: 0;
+	margin:0;
+ }
+
+body
+{
+  
+}
+.background-img
+{
+  background-image: url('body.png');
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+
+  opacity: 0.8;
+}
+form
+{
+  margin: auto;
+  display: block;
+  top: 350px;
+  top: 55%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  transition-duration: .5s;
+  background-color: #320d3f;
+  z-index: 1000;
+  padding: 50px;
+  border-radius: 10px;
+  top: -300px;
+  }
+
+.form-h1{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Bungee', cursive;
+}
+form input{
+  display: block;
+ 
+  height: 50px;
+  margin: 20px 0px;
+  border: 2px solid #f162ff;
+  width: 300px;
+  border-radius: 5px;
+  text-align:center;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 20px;
+  }
+form input:focus{
+  border: 3px solid  #d902ee;
+  outline:none;
+  transition-duration: .3s;
+  }
+form .btn{
+  border:1px solid #f162ff;
+  border-radius: 5px;
+  background-color: #f162ff;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+form .btn:hover
+{
+ opacity: 0.8;
+
+
+}
+.login-options{
+ display: block;
+ text-align: center;
+
+}
+#rememberme{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: sub;
+ }
+#rememberme-label{
+  display: inline-block;
+  margin-left: 10px;
+}
+#forgot{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+form p{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0px;
+}
+form a{ 
+  color: #f162ff;
+  cursor:pointer;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+}
+a:hover{
+	opacity: 0.8;
+}
+/*navigation*/
+#nav
+{
+  height: 100vh;
+  width: 300px;
+  display: block;
+  left: -310px;
+  position: fixed;
+  transition: .5s linear;
+  background-color:#f162ff;
+  z-index: 1001;
+
+}
+#nav nav
+{
+   width: 100%;
+   display: block;
+   margin: 50px 20px;
+}
+#nav nav ul{
+ text-align: left;
+}
+#nav nav ul li{
+   	color: #fff;
+	display: block;
+    font-weight: 1000;
+	font-size: 30px;
+	padding:30px 0px;
+	 
+}
+#nav nav ul li a{
+   color: #fff;
+   font-size: 28px;
+   text-decoration: none;
+   font-family: 'Bungee', cursive;
+   text-shadow:1px 1px #000;
+
+}
+
+.fa
+{
+  color: #fff;
+  font-size: 40px;
+  margin:10px;
+  position: fixed;
+  transition-duration: .9s;
+  cursor: pointer;
+}
+.fa-times:hover{
+  transform: rotate(180deg);
+}
+.fa-times
+{
+ margin-left:250px;
+ font-size: 40px;
+}
+form span
+{
+ color: white;
+ font-family: 'Bungee', cursive;
+ font-weight: 800;
+ font-size: 40px;
+ position: fixed;
+ float: right;
+ top:-5px;
+ right: 20px;
+ cursor: pointer;
+ display: none;
+
+}
+#login-button{
+  display: none;
+}
+#login-button-mobile
+{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 10001;
+    outline-style: none;  
+
+  }
+/*main-h1*/
+#h1
+{
+  transition-duration: .3s;
+}
+.main-h1
+{
+  color: white;
+  position: absolute;
+  display: block;
+  top:0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center; 
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Bungee', cursive;
+  width: 100%;
+  transition-duration: 3.3s;
+  word-spacing: 10px;
+}
+#main-h1-left
+{
+top:30%;
+left: -300px;
+}
+#main-h1-right{
+top:50%;
+left:2500px;
+}
+
+/*desktop*/
+@media screen and (min-width: 900px){
+
+form span
+{
+ display: block;
+}
+
+form{
+  top: -320px;
+}
+form input{
+  width: 500px;
+ }
+form p{
+  font-size:22px;
+	}
+form .form-h1{
+    }
+.login-options{
+  display: block;
+  text-align: left;
+}
+#rememberme{
+  display: inline-block;
+  vertical-align: sub;
+ }
+#rememberme-label{
+  display: inline-block;
+  margin-left: 10px;
+}
+#forgot{
+  display: inline-block;
+  float: right;
+}
+
+/*navigation*/
+.fa{
+	display: none;
+}
+#nav
+{
+
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  z-index: -1;
+}
+#nav nav
+{
+  display: block;
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  margin: 0px 20px;
+
+  
+}
+#nav nav ul{
+ text-align: center;
+ display: block;
+ margin-right: 50px;
+
+ 
+}
+#nav nav ul li{
+   display: inline-block;
+   line-height: 100px;
+   padding: 0px 20px;
+}
+#nav nav ul li a{
+   color: #fff;
+   font-size: 25px;
+   padding:20px 0;
+   text-decoration: none;
+   font-family: 'Bungee', cursive;
+
+}
+#login-button
+{
+   display: block;
+   cursor: pointer;
+   border: 1px solid #fff;
+   background-color: transparent;
+   width: 100px;
+   height: 50px;
+   display: inline-block;
+   float: right;
+   top:50%;
+   left: 50%;
+   transform:translate(-50%,50%);
+   font-size: 25px;
+   color: #fff;
+   font-family: 'Archivo Narrow', sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 1000;
+   outline-style: none;  
+
+}
+#login-button:hover{
+	background-color: #fff;
+	color: #d902ee;
+	opacity: 0.7;
+}
+#login-button-mobile
+{
+  display: none;
+}
+#logo
+{  
+   color: #fff;
+   font-size: 34px;
+   font-family: 'Bungee', cursive;
+   float: left;
+   display: block;
+   line-height: 100px;
+   padding-left: 20px;
+
+}
+ .main-h1
+ {
+  
+  color: white;
+  position: absolute;
+  display: block;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  text-align: center; 
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px  #f162ff;
+  font-family: 'Bungee', cursive;
+  width: 100%;
+  transition-duration: 3.3s;
+  word-spacing: 10px;
+ }
+
+}
+
+@media screen and (max-width: 280px)
+{
+
+ form input{
+ 	width: 250px;
+ }
+ p{
+ 	display: block;
+ 	text-align: center;
+ }
+
